@@ -22,3 +22,5 @@ go run cards\main.go cards\state.go
 ```
 go run cards\main.go cards\state.go cards\deck.go
 ```
+## Random Number Generation
+- Create NewSource with different Seed to produce different random number --> Read the pkg documentations

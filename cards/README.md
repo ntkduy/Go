@@ -14,6 +14,7 @@ go run cards\main.go cards\state.go
 ## Slices and For Loops
 - Slice: is an array that can grow and shrink.
 - Slice: every element in a slice must be of same type.
+- Slice range: [startIndexIncluding:upToNotIncluding] --> ```card[:2]``` --> ```card[0] & card[1]```
 - For Loop: the "index" variable must be used somewhere within the loop.
 
 ## OO Approach vs GO Approach

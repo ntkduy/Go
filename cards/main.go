@@ -3,13 +3,30 @@ package main
 import "fmt"
 
 func main() {
-	// var card string = "Ace of Spades"
+	/* Variable Declaration */
 	card := "Ace of Spades"
 	card = "Five of Diamonds"
 
 	card = newCard()
 	fmt.Println(card)
 	printState()
+
+	/* Slices */
+	cards := []string{newCard(), "Ace of Spades"}
+	cards = append(cards, "Six of Spades")
+
+	/* For Loop */
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
+
+	/* OO Approach vs GO Approach */
+	deckCards := deck{newCard(), "Ace of Spades"}
+	for i, deckCard := range deckCards {
+		fmt.Println(i+2, deckCard)
+	}
+	// This code line behave exactly the same with the for loop above
+	deckCards.print()
 }
 
 func newCard() string {

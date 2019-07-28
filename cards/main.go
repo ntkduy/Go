@@ -4,16 +4,16 @@ import "fmt"
 
 func main() {
 	/* Variable Declaration */
-	card := "Ace of Spades"
-	card = "Five of Diamonds"
+	// card := "Ace of Spades"
+	// card = "Five of Diamonds"
 
-	card = newCard()
-	fmt.Println(card)
-	printState()
+	// card = newCard()
+	// fmt.Println(card)
+	// printState()
 
 	/* Slices */
-	cards := []string{newCard(), "Ace of Spades"}
-	cards = append(cards, "Six of Spades")
+	// cards := []string{newCard(), "Ace of Spades"}
+	// cards = append(cards, "Six of Spades")
 
 	/* For Loop */
 	// for i, card := range cards {
@@ -29,16 +29,14 @@ func main() {
 	// deckCards.print()
 
 	// Using newCard func in deck.go
-	newCardDeck := newDeck()
+	// newCardDeck := newDeck()
 	// newCardDeck.print()
 
 	// Using deal func in deck.go
-	hand, remainingCards := deal(newCardDeck, 5)
-	hand.print()
-	remainingCards.print()
+	// hand, remainingCards := deal(newCardDeck, 5)
+	// hand.print()
+	// remainingCards.print()
 
-}
-
-func newCard() string {
-	return "string from the newCard() function"
+	cards := newDeck()
+	fmt.Println(cards.toString())
 }
